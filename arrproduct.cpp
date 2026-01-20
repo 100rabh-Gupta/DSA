@@ -17,10 +17,12 @@ void Print( int n,int arr[],int index){
 }
 
 int main(){
-    int inde=0;
-    int arr[]={2,4,1,6,5};
+
+     int arr[]={2,4,1,6,5};
     int n=sizeof(arr)/ sizeof(arr[0]);
     cout<<"Array : ";
      Print(n,arr,0);
 
-     cout<<endl<<prod(arr,n-1);}
+     cout<<endl<<prod(arr,n-1);
+    
+    }
