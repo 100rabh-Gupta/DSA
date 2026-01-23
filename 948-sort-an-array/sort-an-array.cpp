@@ -47,8 +47,6 @@ void merge(vector<int>& num, int start, int mid, int end){
 int  start=0;
 vector<int>num=nums;
        mergesort( num,start,nums.size()-1);
-
-         
          return num;
         
     }
