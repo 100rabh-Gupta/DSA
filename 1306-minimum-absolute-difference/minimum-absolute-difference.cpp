@@ -5,18 +5,29 @@ public:
        
 
         sort( arr.begin(),arr.end());
-        int diff = INT_MAX;
+        int pdiff = INT_MAX;
         for ( int i=1;i<arr.size();i++){
-            diff= min( diff,abs(arr[i]-arr[i-1]));
-
-        }
-         for ( int i=1;i<arr.size();i++){
-          if ( diff==abs(arr[i]-arr[i-1])){
-            ans.push_back({arr[i-1],arr[i]});
-
             
-          }
+          int  cdiff=arr[i]-arr[i-1];
+
+            if ( pdiff>cdiff){
+                pdiff =cdiff;
+                ans.clear();
+                ans.push_back({arr[i-1],arr[i]});
+
+            }
+            else {if(pdiff==cdiff){
+                    ans.push_back({arr[i-1],arr[i]});
+                }
+            }
+
+         
+
         }
+         
+            
+          
+        
         return ans;
         
     }
