@@ -15,6 +15,10 @@ public:
                 if (oset.size()==eset.size()){ans=max(ans,j-i+1);}
 
             }
+               if(n - i <ans) break;
+
+            oset.clear();
+            eset.clear();
 
         }
         
