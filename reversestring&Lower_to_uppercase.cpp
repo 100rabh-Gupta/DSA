@@ -27,6 +27,5 @@ int main( ){
       cout<<"After  string reverse: "<< s<< endl;
 touppercase( s, s.length()-1);
       cout<<"Converting string to uppercase : "<<s;
-
-
+      
 }
