@@ -6,7 +6,7 @@ public:
     
       
         
-        for ( int i=0;i<s.size();i++){
+        for ( int i=1;i<s.size();i++){
             if (s[i]=='0')zero=1;
             if (s[i]=='1'&& zero){
               return false;
